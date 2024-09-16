@@ -19,13 +19,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <style jsx global>{`
-         {
-          html {
-            font-family: ${poppins.style.fontFamily};
-          }
-        }
-      `}</style> */}
       <body className={`  antialiased`}>{children}</body>
     </html>
   );
