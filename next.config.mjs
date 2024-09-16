@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/anandhex.github.io",
+  basePath: "/portfolio",
   images: {
     unoptimized: true, // This is necessary as GitHub Pages doesn't support image optimization
   },
