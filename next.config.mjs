@@ -3,7 +3,7 @@ const nextConfig = {
   output: "export",
   basePath: "/portfolio",
   images: {
-    unoptimized: true, // This is necessary as GitHub Pages doesn't support image optimization
+    unoptimized: true,
   },
 };
 
