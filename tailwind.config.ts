@@ -12,6 +12,7 @@ const config: Config = {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         accent: "var(--accent)",
+        gradientXard: "var(--bg-gradient)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
