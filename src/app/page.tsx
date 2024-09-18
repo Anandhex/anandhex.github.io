@@ -12,12 +12,12 @@ export default function Home() {
   const currentDate = new Date();
   return (
     <main className="bg-primary text-primary max-w-[1920px] m-auto relative">
-      <section className="fixed w-full flex justify-center items-center z-30 top-6  ">
+      <section className="hidden fixed w-full xl:flex justify-center items-center z-30 top-6  ">
         <nav className="h-[48px] bg-primary rounded-full flex items-center z-30 px-8 py-4 gap-24 shadow-2xl">
           <ul className="text-secondary flex text-xl font-bold  gap-4">
             <li>
               <a
-                className="overline decoration-accent hover:text-accent transition-colors"
+                className="overline hover:text-accent transition-colors"
                 href="#contact"
               >
                 Home
@@ -25,7 +25,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                className="overline decoration-accent hover:text-accent transition-colors"
+                className=" hover:text-accent transition-colors"
                 href="#contact"
               >
                 About
@@ -33,7 +33,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                className="overline decoration-accent hover:text-accent transition-colors"
+                className=" hover:text-accent transition-colors"
                 href="#contact"
               >
                 Projects
@@ -41,14 +41,13 @@ export default function Home() {
             </li>
             <li>
               <a
-                className="overline decoration-accent hover:text-accent transition-colors"
+                className=" hover:text-accent transition-colors"
                 href="#contact"
               >
                 Contact
               </a>
             </li>
           </ul>
-          <div className="text-red-50">item</div>
         </nav>
       </section>
 
@@ -79,9 +78,9 @@ export default function Home() {
                 alt="profile picture of anand"
               ></Image>
               <span className="relative ">
-                <span className="relative uppercase font-extrabold leading-[0.7] ">
-                  <span className="text-lg absolute top-4 -left-4">yeah</span>
-                  &#x2019;ALLO{/* Using the HTML entity for the apostrophe */}
+                <span className="relative uppercase font-extrabold text-2xl">
+                  yeah &#x2019;ALLO
+                  {/* Using the HTML entity for the apostrophe */}
                 </span>
               </span>
             </section>
