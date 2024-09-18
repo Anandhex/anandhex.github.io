@@ -52,3 +52,24 @@ main {
 .half {
   clip-path: circle(35.1% at 100% 0);
 }
+
+.animate-fade-left {
+  transform: translateX(400px);
+  opacity: 0;
+  animation: fade-left 300ms 200ms ease-in forwards;
+}
+.animate-fade-right {
+  transform: translateX(-200px);
+  opacity: 0;
+  animation: fade-left 300ms 300ms ease-in forwards;
+}
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

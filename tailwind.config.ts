@@ -18,6 +18,9 @@ const config: Config = {
         poppins: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
       },
+      animation: {
+        "bounce-slow": "bounce 2s infinite",
+      },
     },
   },
   plugins: [],
