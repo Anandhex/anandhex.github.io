@@ -7,6 +7,9 @@ import arrowDecoration from "@/app/assets/icons/arrow_decoration.svg";
 import configurator from "@/app/assets/images/projects/configurator.png";
 import goTo from "@/app/assets/icons/goto.svg";
 import ContactForm from "@/app/components/ContactForm";
+import Link from "next/link";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const currentDate = new Date();
@@ -14,40 +17,7 @@ export default function Home() {
     <main className="bg-primary text-primary max-w-[1920px] m-auto relative">
       <section className="hidden fixed w-full xl:flex justify-center items-center z-30 top-6  ">
         <nav className="h-[48px] bg-primary rounded-full flex items-center z-30 px-8 py-4 gap-24 shadow-2xl">
-          <ul className="text-secondary flex text-xl font-bold  gap-4">
-            <li>
-              <a
-                className="overline hover:text-accent transition-colors"
-                href="#contact"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                className=" hover:text-accent transition-colors"
-                href="#contact"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                className=" hover:text-accent transition-colors"
-                href="#contact"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                className=" hover:text-accent transition-colors"
-                href="#contact"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
+          <Header />
         </nav>
       </section>
 
@@ -285,23 +255,7 @@ export default function Home() {
           src={arrowDecoration}
         />
       </section>
-      <footer className="flex justify-end p-4 xl:p-8 items-center">
-        <div className="flex gap-6">
-          <p className="text-secondary flex items-center">
-            © Anand Patil 2024{" "}
-            {currentDate.getFullYear() != 2024
-              ? ` - ${currentDate.getFullYear()}`
-              : ""}
-          </p>
-          <a href="#intro">
-            <Image
-              src={arrowUp}
-              className="rotate-180 w-4 xl:w-8"
-              alt="scroll to top"
-            />
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

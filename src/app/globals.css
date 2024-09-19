@@ -73,3 +73,21 @@ main {
     transform: translateX(0);
   }
 }
+
+.text-position {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.move-skills {
+  object-fit: cover;
+  animation: move-in 10s ease infinite alternate;
+}
+@keyframes move-in {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
