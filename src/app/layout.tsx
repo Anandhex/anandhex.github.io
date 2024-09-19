@@ -13,8 +13,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Hi Next App",
-  description: "Hey by create next app",
+  title: "Anand",
+  description:
+    "I'm a UI developer exploring how advanced tech enhances design. I blend creativity and logic to craft intuitive, engaging interfaces.",
 };
 
 export const viewport: Viewport = {
