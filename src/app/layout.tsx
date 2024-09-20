@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "Anand",
   description:
     "I'm a UI developer exploring how advanced tech enhances design. I blend creativity and logic to craft intuitive, engaging interfaces.",
+  creator: "Anand",
 };
 
 export const viewport: Viewport = {
