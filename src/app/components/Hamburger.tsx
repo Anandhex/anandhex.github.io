@@ -11,6 +11,7 @@ interface Props {}
 const Hamburger: React.FC<Props> = () => {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const showModal = () => {
+    window.scrollTo(0, 0);
     dialogRef.current?.showModal();
   };
   const closeModal = () => {
