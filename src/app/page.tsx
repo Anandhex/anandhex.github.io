@@ -34,7 +34,7 @@ export default function Home() {
           />
         </svg>
         <section
-          className=" grid md:grid-rows-[80px_500px_100px] xl:min-h-screen xl:grid-rows-[80px_1fr_300px]"
+          className=" grid md:grid-rows-[80px_500px_100px] xl:min-h-screen xl:grid-rows-[80px_1fr_200px]"
           id="intro"
         >
           <div></div>
