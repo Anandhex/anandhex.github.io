@@ -34,7 +34,7 @@ export default function Home() {
               src={profileImage}
               alt="profile image of anand"
               priority
-              className="md:w-1/2 h-[320px] object-contain md:object-right"
+              width={240}
             />
             <div className="max-w-[65ch]">
               <p className="lg:text-4xl font-bold mb-4">
