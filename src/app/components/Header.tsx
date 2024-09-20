@@ -30,11 +30,7 @@ const Header: React.FC<Props> = () => {
           About
         </Link>
       </li>
-      <li>
-        <Link className=" hover:text-accent transition-colors" href="/#contact">
-          Projects
-        </Link>
-      </li>
+
       <li>
         <Link className=" hover:text-accent transition-colors" href="/#contact">
           Contact

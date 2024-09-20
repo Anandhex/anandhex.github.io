@@ -1,12 +1,16 @@
 import Image from "next/image";
 import profileImage from "@/app/assets/images/me/me.png";
 import headerAnchor from "@/app/assets/icons/header_anchor.svg";
+import arrowDecoration from "@/app/assets/icons/arrow_decoration.svg";
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Hamburger from "../components/Hamburger";
 
 export default function Home() {
   return (
     <main className="bg-primary text-primary max-w-[1920px] m-auto relative">
+      <Hamburger />
       <section className="hidden fixed w-full xl:flex justify-center items-center z-30 top-6  ">
         <nav className="h-[48px] bg-primary rounded-full flex items-center z-30 px-8 py-4 gap-24 shadow-2xl">
           <Header />
@@ -21,34 +25,36 @@ export default function Home() {
             fill="#2C3333"
           />
         </svg>
-        <section className="w-full relative mt-56 mb-16">
+        <section className="w-full relative mt-16 xl:mt-[180px] mb-16 text-bg">
           <h2 className="text-3xl xl:text-9xl font-extrabold text-center mb-14">
             I&#x2019;m Anand.
           </h2>
-          <section className="flex mx-8 flex-col items-center md:flex-row justify-center md:items-start gap-4 md:gap-32">
-            <div>
-              {" "}
-              <Image src={profileImage} alt="profile image of anand" priority />
-            </div>
+          <section className="flex  flex-col items-center md:flex-row justify-center md:items-start gap-4 md:gap-8 mx-auto md:w-max">
+            <Image
+              src={profileImage}
+              alt="profile image of anand"
+              priority
+              className="md:w-1/2 h-[320px] object-contain md:object-right"
+            />
             <div className="max-w-[65ch]">
-              <p className="text-4xl font-bold mb-4">
-                I'm a UI developer who mixes tech and creativity to whip up
-                designs that look and feel awesome.
+              <p className="lg:text-4xl font-bold mb-4">
+                I&lsquo;m a UI developer who mixes tech and creativity to whip
+                up designs that look and feel awesome.
               </p>
-              <p className="mb-4 text-lg">
+              <p className="mb-4 lg:text-lg">
                 Think of me as a tech wizard crafting pixel-perfect magic. I
                 blend creativity with precision to make interfaces smooth and
                 engaging.
               </p>
-              <p className="text-lg">
-                Right now, I'm studying Computational Modeling and Simulation at
-                TU Dresden, which allows me to refine my technical skills and
-                address complex, real-world challenges.
+              <p className="lg:text-lg">
+                Right now, I&lsquo;m studying Computational Modeling and
+                Simulation at TU Dresden, which allows me to refine my technical
+                skills and address complex, real-world challenges.
               </p>
             </div>
           </section>
         </section>
-        <section className="px-32 mb-16">
+        <section className="lg:px-32 mb-16 ">
           <h3 className="font-extrabold mb-2 md:mb-4 text-right flex w-full justify-end text-2xl md:text-4xl xl:text-7xl uppercase xl:mb-8 ">
             <Image
               src={headerAnchor}
@@ -57,8 +63,8 @@ export default function Home() {
             />
             Skills
           </h3>
-          <section className="flex justify-between items-center">
-            <section className="flex items-start gap-8">
+          <section className="flex flex-wrap justify-between items-center">
+            <section className="flex flex-wrap justify-center text-center md:text-left md:items-start gap-8">
               <section>
                 <h4 className="text-2xl font-bold mb-4 uppercase text-accent">
                   Languages
@@ -97,7 +103,7 @@ export default function Home() {
                 </ul>
               </section>
             </section>
-            <section className=" w-52 h-52 overflow-hidden mr-16">
+            <section className="hidden md:block md:w-24 md:h-24 lg:w-52 lg:h-52 overflow-hidden mr-16">
               <img
                 src="https://skillicons.dev/icons?perline=1&i=java,angular,css,electron,express,flask,git,html,java,js,mongodb,mysql,nextjs,nodejs,py,react,redux,sass,tailwind,docker,ts,vite,vscode,nodejs,figma&theme=dark"
                 alt="skills"
@@ -106,7 +112,7 @@ export default function Home() {
             </section>
           </section>
         </section>
-        <section className="px-32 mb-24">
+        <section className="lg:px-32 mb-24">
           <h3 className="font-extrabold mb-2 md:mb-4 text-right flex w-full justify-end text-2xl md:text-4xl xl:text-7xl uppercase xl:mb-8 ">
             <Image
               src={headerAnchor}
@@ -115,7 +121,7 @@ export default function Home() {
             />
             Interests
           </h3>
-          <section className="flex gap-8">
+          <section className="flex flex-wrap-reverse lg:grid lg:grid-cols-2 lg:place-content-end gap-8">
             <section className="grid grid-cols-5 gap-4">
               <img
                 className="col-span-3 object-cover h-64 w-full"
@@ -140,20 +146,28 @@ export default function Home() {
               />
             </section>
             <section>
-              <p className="max-w-[45ch] font-roboto font-semibold text-lg">
-                When I'm not busy weaving code into user-friendly designs,
-                you'll probably find me sketching away in my free time, trying
-                to master my anime-watching skills (One Piece is my long-term
-                obsession, and I can't get enough of those isekai adventures),
-                or getting lost in a psychological thriller like{" "}
-                <em>The Silent Patient</em>. I'm also a big fan of manhwa, which
-                keeps my creative juices flowing and gives me fresh inspiration
-                for my design projects. So, whether I'm working on a new
-                interface or just chilling with some manga, I'm always on the
-                lookout for the next great idea to bring to life.
+              <p className="max-w-[45ch] lg:max-w-full font-roboto font-semibold text-lg">
+                When I&lsquo;m not busy weaving code into user-friendly designs,
+                you&lsquo;ll probably find me sketching away in my free time,
+                trying to master my anime-watching skills (One Piece is my
+                long-term obsession, and I can&lsquo;t get enough of those
+                isekai adventures), or getting lost in a psychological thriller
+                like <em>The Silent Patient</em>.
+              </p>
+              <p className="max-w-[45ch lg:max-w-full font-roboto font-semibold text-lg">
+                I&lsquo;m also a big fan of manhwa, which keeps my creative
+                juices flowing and gives me fresh inspiration for my design
+                projects. So, whether I&lsquo;m working on a new interface or
+                just chilling with some manga, I&lsquo;m always on the lookout
+                for the next great idea to bring to life.
               </p>
             </section>
           </section>
+          <Image
+            className="absolute bottom-0 right-0 opacity-15 rotate-[-145deg]  z-0"
+            alt="decorative-element"
+            src={arrowDecoration}
+          />
         </section>
       </section>
       <Footer />
