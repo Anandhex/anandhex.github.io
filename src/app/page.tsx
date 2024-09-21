@@ -25,7 +25,7 @@ export default function Home() {
 
       <Hamburger />
 
-      <section className=" relative p-4 bg-secondary md:rounded-b-[64px]  md:mb-8  md:mx-[24px] xl:min-h-screen xl:mx-[62px] xl:mb-12 xl:rounded-b-[258px] overflow-hidden ">
+      <section className=" relative p-4 bg-secondary md:rounded-b-[64px]  md:mb-8  md:mx-[24px]  xl:mx-[62px] xl:mb-12 xl:rounded-b-[258px] overflow-hidden ">
         <svg className="absolute w-16 h-16 md:w-24  md:h-24 xl:w-32 xl:h-32 bg-primary -right-0 -top-0 rounded-bl-full text-bg">
           <path
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export default function Home() {
           />
         </svg>
         <section
-          className=" grid md:grid-rows-[80px_500px_100px] xl:min-h-screen xl:grid-rows-[80px_1fr_200px]"
+          className=" grid md:grid-rows-[80px_500px_100px]  xl:grid-rows-[80px_1fr_150px] gap-8"
           id="intro"
         >
           <div></div>
@@ -83,7 +83,7 @@ export default function Home() {
                 interfaces.
               </p>
               <div>
-                <p className="font-bold text-lg  hidden md:block">
+                {/* <p className="font-bold text-lg  hidden md:block">
                   If you&#x2019;d like to know more about me{" "}
                   <Link
                     href={"/about"}
@@ -91,8 +91,8 @@ export default function Home() {
                   >
                     click me!
                   </Link>
-                </p>
-                <p className="font-bold text-2xl mt-2 xl:text-right ">
+                </p> */}
+                <p className="font-bold text-2xl  xl:text-right ">
                   Want to create something awesome? <br /> Let&#x2019;s get{" "}
                   <Link
                     href="#contact"
@@ -138,7 +138,7 @@ export default function Home() {
             alt="header-anchor"
             className="w-12 md:w-16 xl:w-40"
           />
-          Projects
+          offerings
         </h3>
         <section className="grid gap-y-4 grid-cols-1 md:grid-cols-2 md:place-content-end md:gap-4  md:place-items-end md:justify-end xl:grid-cols-6 xl:gap-8">
           <div className=" w-full xl:col-span-4  bg-gray-200 md:place-self-end hover:shadow-lg transition-shadow group overflow-hidden bg-primary">
@@ -147,8 +147,8 @@ export default function Home() {
               alt="configurator project thumbnail"
               className="w-full object-cover relative md:h-32 xl:h-64 xl:group-hover:-translate-y-9 group-hover:shadow-lg transition-transform"
             />
-            <h4 className="md:text-2xl  xl:text-4xl text-secondary uppercase font-extrabold px-8 pt-4 xl:pt-0 xl:translate-y-8 xl:group-hover:-translate-y-3.5 xl:transition-transform ">
-              analytics dashboards and report generators
+            <h4 className="md:text-2xl break-words  xl:text-4xl text-secondary uppercase font-extrabold px-8 pt-4 xl:pt-0 xl:translate-y-8 xl:group-hover:-translate-y-3.5 xl:transition-transform ">
+              dashboards and report generators
             </h4>
             <div className="px-8 pb-4 flex text-secondary justify-between items-end xl:opacity-0  xl:group-hover:opacity-100 xl:group-hover:-translate-y-3.5 transition-transform ">
               <p className="font-roboto md:text-sm xl:text-base  line-clamp-2 basis-3/4">
@@ -168,7 +168,7 @@ export default function Home() {
               alt="configurator project thumbnail"
               className="w-full object-cover relative md:h-32 xl:h-64  xl:group-hover:-translate-y-9 group-hover:shadow-lg transition-transform"
             />
-            <h4 className="md:text-2xl  xl:text-4xl text-secondary uppercase font-extrabold px-8 pt-4 xl:pt-0 xl:translate-y-8 xl:group-hover:-translate-y-3.5 xl:transition-transform ">
+            <h4 className="md:text-2xl break-words  xl:text-4xl text-secondary uppercase font-extrabold px-8 pt-4 xl:pt-0 xl:translate-y-8 xl:group-hover:-translate-y-3.5 xl:transition-transform ">
               configurators
             </h4>
             <div className="px-8 pb-4 xl:pb-0 flex text-secondary justify-between items-end xl:opacity-0  xl:group-hover:opacity-100 xl:group-hover:-translate-y-3.5 transition-transform ">
@@ -184,13 +184,34 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="w-full xl:col-span-2 xl:col-start-3   bg-gray-200 md:place-self-end hover:shadow-lg transition-shadow group overflow-hidden bg-primary">
+          <div className="w-full xl:col-span-2   bg-gray-200 md:place-self-end hover:shadow-lg transition-shadow group overflow-hidden bg-primary">
+            <Image
+              src={ecommerce}
+              alt="configurator project thumbnail"
+              className="w-full object-cover h-[250px] relative md:h-32 xl:h-64  xl:group-hover:-translate-y-9 group-hover:shadow-lg transition-transform"
+            />
+            <h4 className="md:text-2xl break-words  xl:text-4xl text-secondary uppercase font-extrabold px-8 pt-4 xl:pt-0 xl:translate-y-8 xl:group-hover:-translate-y-3.5 xl:transition-transform ">
+              portfolios
+            </h4>
+            <div className="px-8 pb-4 flex text-secondary justify-between items-end xl:opacity-0  xl:group-hover:opacity-100 xl:group-hover:-translate-y-3.5 transition-transform ">
+              <p className="font-roboto md:text-sm xl:text-base  line-clamp-2 basis-3/4">
+                Create custom portfolios that highlight your unique skills,
+                achievements, and projects. These portfolios are designed to
+                showcase your professional identity in a visually compelling
+                way, helping you stand out to potential clients or employers.
+              </p>
+              <a href="#" className="basis-1/4 flex justify-end">
+                <Image src={goTo} alt="What are configurators" width={48} />
+              </a>
+            </div>
+          </div>
+          <div className="w-full xl:col-span-2   bg-gray-200 md:place-self-end hover:shadow-lg transition-shadow group overflow-hidden bg-primary">
             <Image
               src={catalogues}
               alt="configurator project thumbnail"
               className="w-full object-cover relative md:h-32 xl:h-64  xl:group-hover:-translate-y-9 group-hover:shadow-lg transition-transform"
             />
-            <h4 className="md:text-2xl  xl:text-4xl text-secondary uppercase font-extrabold px-8 pt-4 xl:pt-0 xl:translate-y-8 xl:group-hover:-translate-y-3.5 xl:transition-transform ">
+            <h4 className="md:text-2xl break-words  xl:text-4xl text-secondary uppercase font-extrabold px-8 pt-4 xl:pt-0 xl:translate-y-8 xl:group-hover:-translate-y-3.5 xl:transition-transform ">
               catalogues
             </h4>
             <div className="px-8 pb-4 flex text-secondary justify-between items-end xl:opacity-0  xl:group-hover:opacity-100 xl:group-hover:-translate-y-3.5 transition-transform ">
@@ -211,7 +232,7 @@ export default function Home() {
               alt="configurator project thumbnail"
               className="w-full object-cover h-[250px] relative md:h-32 xl:h-64  xl:group-hover:-translate-y-9 group-hover:shadow-lg transition-transform"
             />
-            <h4 className="md:text-2xl  xl:text-4xl text-secondary uppercase font-extrabold px-8 pt-4 xl:pt-0 xl:translate-y-8 xl:group-hover:-translate-y-3.5 xl:transition-transform ">
+            <h4 className="md:text-2xl break-words  xl:text-4xl text-secondary uppercase font-extrabold px-8 pt-4 xl:pt-0 xl:translate-y-8 xl:group-hover:-translate-y-3.5 xl:transition-transform ">
               e-commerce
             </h4>
             <div className="px-8 pb-4 flex text-secondary justify-between items-end xl:opacity-0  xl:group-hover:opacity-100 xl:group-hover:-translate-y-3.5 transition-transform ">
