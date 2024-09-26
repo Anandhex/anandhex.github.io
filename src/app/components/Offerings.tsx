@@ -22,7 +22,6 @@ const Offerings: React.FC<Props> = ({}) => {
         scrub: true,
         start: "-500px",
         end: "-250px",
-        markers: true,
         once: true,
       },
     });
