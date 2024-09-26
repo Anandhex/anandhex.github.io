@@ -11,7 +11,9 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
-const Offerings: React.FC<{}> = ({}) => {
+interface Props {}
+
+const Offerings: React.FC<Props> = ({}) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline({

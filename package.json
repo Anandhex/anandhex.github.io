@@ -10,7 +10,6 @@
     "deploy": "npm run build && touch out/.nojekyll"
   },
   "dependencies": {
-    "@studio-freight/react-lenis": "^0.0.47",
     "firebase": "^10.13.1",
     "gsap": "^3.12.5",
     "next": "14.2.11",

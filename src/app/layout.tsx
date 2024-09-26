@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
-import SmoothScrolling from "./components/SmoothScrolling";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -35,11 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>
-        {/* <SmoothScrolling> */}
-        {children}
-        {/* </SmoothScrolling> */}
-      </body>
+      <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
 }
