@@ -16,6 +16,8 @@ const Footer: React.FC<Props> = () => {
             <a
               className="flex items-end gap-4"
               href="https://www.linkedin.com/in/anand-patil-67a7b5169/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Image className="block" src={linkdin} alt="linkdin" />
               <span className="block">Linkdin</span>
@@ -25,6 +27,8 @@ const Footer: React.FC<Props> = () => {
             <a
               className="flex items-end gap-4"
               href="https://github.com/Anandhex"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Image className="block" src={github} alt="github" />
               <span className="block">Github</span>
