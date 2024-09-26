@@ -50,11 +50,11 @@ export default function Home() {
               </span>
             </section>
             {/* ---Tablet and above---- */}
-            <section className="hidden  md:flex md:items-end  xl:items-center justify-center  md:place-content-end xl:mt-54 xl:py-8 flex-wrap self-center text-bg ">
+            <section className="hidden  md:flex md:items-end   justify-center  md:place-content-end xl:mt-54 xl:py-8 flex-wrap self-center text-bg ">
               {/* <span className="relative animate-fade-left"> */}
               {/* <span className="rel "> */}
 
-              <span className="animate-fade-left uppercase font-extrabold md:text-[8rem]  xl:text-[22rem] relative  leading-[0.7] w-fit ">
+              <span className="animate-fade-left uppercase font-extrabold md:text-[8rem]  xl:text-[20rem] relative  leading-[0.7] w-fit ">
                 <span className="text-sm md:text-base xl:text-xl absolute md:left-0 top-[-1.6rem] xl:left-[2rem] ">
                   yeah
                 </span>
@@ -64,11 +64,11 @@ export default function Home() {
               </span>
               {/* </span> */}
               <Image
-                className="md:w-[90px] xl:w-[219px] relative xl:-top-[1.6rem] z-10 md:text-[8rem] xl:text-[22rem] md:-mr-[0.55ch] xl:-mr-[0.5ch] "
+                className="md:w-[90px] xl:w-[219px]  z-10 md:text-[8rem] xl:text-[20rem] md:-mr-[0.55ch] xl:-mr-[0.5ch] "
                 src={profileImage}
                 alt="profile picture of anand"
               ></Image>
-              <span className="uppercase font-extrabold md:text-[8rem]  xl:text-[22rem] relative  leading-[0.7] w-fit animate-fade-right">
+              <span className="uppercase font-extrabold md:text-[8rem]  xl:text-[20rem] relative  leading-[0.7] w-fit animate-fade-right">
                 LO
               </span>
             </section>
