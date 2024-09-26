@@ -151,7 +151,9 @@ export default function Home() {
             <ul className="font-medium md:text-2xl font-roboto">
               <li>
                 <span className="font-bold">Email:</span>{" "}
-                anand.patil.ap79@gmail.com
+                <a href="mailto:anand.patil.ap79@gmail.com">
+                  anand.patil.ap79@gmail.com
+                </a>
               </li>
             </ul>
           </section>

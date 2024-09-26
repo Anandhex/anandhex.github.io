@@ -14,23 +14,23 @@ const Footer: React.FC<Props> = () => {
         <ul className="flex gap-4">
           <li>
             <a
-              className="flex items-end gap-4"
+              className="flex items-center gap-2"
               href="https://www.linkedin.com/in/anand-patil-67a7b5169/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image className="block" src={linkdin} alt="linkdin" />
+              <Image className="block w-4 h-4" src={linkdin} alt="linkdin" />
               <span className="block">Linkdin</span>
             </a>
           </li>
           <li>
             <a
-              className="flex items-end gap-4"
+              className="flex items-center gap-2"
               href="https://github.com/Anandhex"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image className="block" src={github} alt="github" />
+              <Image className="block w-4 h-4" src={github} alt="github" />
               <span className="block">Github</span>
             </a>
           </li>
