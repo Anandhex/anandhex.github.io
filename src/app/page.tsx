@@ -153,9 +153,6 @@ export default function Home() {
                 <span className="font-bold">Email:</span>{" "}
                 anand.patil.ap79@gmail.com
               </li>
-              <li>
-                <span className="font-bold">Phone:</span> +91 81 05 100 832
-              </li>
             </ul>
           </section>
           <ContactForm />
