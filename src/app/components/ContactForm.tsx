@@ -66,7 +66,7 @@ const ContactForm: React.FC<Props> = () => {
         required
         placeholder="Message"
       />
-      <div className=" w-full md:flex justify-end mb-8">
+      <div className=" w-full md:flex justify-end ">
         <button className="bg-accent w-full md:w-fit h-[48px] px-4 text-2xl font-bold text-secondary hover:bg-primary transition-colors">
           Let&#x2019;s talk
         </button>

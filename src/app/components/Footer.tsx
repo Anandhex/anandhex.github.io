@@ -6,7 +6,7 @@ const Footer: React.FC<Props> = () => {
   const currentDate = new Date();
 
   return (
-    <footer className="flex justify-end p-4 xl:p-8 items-center">
+    <footer className="flex justify-end p-4 xl:p-8 text-bg items-center ">
       <div className="flex gap-6">
         <p className="text-secondary flex items-center">
           © Anand Patil 2024{" "}
